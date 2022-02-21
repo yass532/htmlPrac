@@ -1,0 +1,30 @@
+ディレクトリ構成
+
+- /index.html(top page)
+ - pages/*
+ - include/*
+ - img(image file)
+
+pages/
+ - about
+ - menu
+ - contact
+ - dir
+
+pages/dir/
+ - sample
+ - block
+ - etc...
+
+include/
+ - style.css
+ - index.js
+
+
+ページ構成
+index -> header(index, about, menu, contact)
+about -> header
+menu -> header, pages
+contact -> header
+
+pages -> header
