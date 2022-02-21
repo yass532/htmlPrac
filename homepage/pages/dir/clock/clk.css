@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+body {
+ //color: white;
+ //background-color: black;
+}
+
+div#d_clock {
+ //padding: 0.5em 1em;
+ //margin: 2pm 0;
+ //border: solid 3px #000000;
+}
+
+div#clock_frame {
+ text-align: center;
+ width: 100%;
+}
+
+span {
+ display: block;
+ //float: right;
+ //width: 85%;
+ font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+span#clock_date {
+ //text-align: right;
+ font-size: 0.4em;
+ padding-right: 0.5em;
+}
+
+span#clock_time {
+ font-size: 1em;
+}

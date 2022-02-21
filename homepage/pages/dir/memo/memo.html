@@ -1,0 +1,45 @@
+<!DOCTYPE html> <!--- htmlコードであることを宣言 --->
+<html lang="ja"> <!--- 日本語（ja）を指定 --->
+ 
+ <head> <!--- ブラウザで必要となる情報の定義　例）CSSファイル、Jsファイル --->
+  <meta charset="UTF-8"> <!--- 文字コード（UTF-8）を指定 --->
+
+  <title>メモ帳</title>
+
+  <!--- cssファイルをstylesheetとして読み込み --->
+  <link href="../../../include/style.css" rel="stylesheet">
+  <link href="./style.css" rel="stylesheet">
+ </head>
+ 
+ 
+ <body> <!--- 実際にユーザーが目にする内容 --->
+
+  <!--- ↓↓↓ヘッダー↓↓↓ --->
+  <div id="header" title="../../../">メモ帳</div>
+  <!--- ↑↑↑ヘッダー↑↑↑ --->
+  
+  <div id="main">
+  <h1>書いたものを保存、読み込みできるメモです。</h1>
+  <form name="form1">
+   <textarea name="Memo"></textarea>
+  </form>
+  <p>
+   <input type="button" value="保存" onclick=save();></input>
+   <input type="button" value="読込" onclick=load();></input>
+  </p>
+  </div>
+  
+  
+  <!--- ↓↓↓フッター↓↓↓ --->
+  <div id="footer"></div>
+  <!--- ↑↑↑フッター↑↑↑ --->
+  
+  <!-- Jsファイルを読み込み -->
+  <script type="text/javascript" src="./memo.js"></script>
+  <script type="text/javascript" src="../../../include/tmp.js"></script>
+
+ </body>
+
+</html>
+
+
