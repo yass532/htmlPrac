@@ -1,0 +1,47 @@
+.container {
+ width: 200px;
+ margin: 50px auto;
+ border: 2px solid black;
+}
+
+ /* 計算結果の出力場所のスタイリング */
+.output {
+ width: 200px;
+ height: 50px;
+ line-height 50px;
+ text-align: right;
+ padding: 5px;
+ margin-bottom: 5px;
+ border: 2px solid black;
+ box-sizing: border-box;
+ display: none;
+}
+
+.output.active {
+ display: block;
+}
+
+/* ボタン部分のスタイリング */
+.input {
+ width: 200px;
+ border: 2px solid black;
+}
+
+.row {
+ display: flex; /* ボタンを横並びに */
+ justify-content: space-between; /* ボタンを均等に並べる */
+ border: 2px solid red;
+ width: 200px;
+}
+
+/* ナンバーボタン、クリアボタン、イコールボタンのスタイリング */
+.num_btn, #clear, #equal_btn {
+ width: 60px;
+ height: 30px;
+ text-align: center; /* 文字の位置 */
+ line-height: 30px;
+ border-radius: 30%; /* ボックスの角を丸める */
+ background: lightgray;
+ cursor: pointer; /* ボタンにカーソルが乗ったことを分かるように */
+ margin: 5px; /* ボタン間に余白を作成 */
+}

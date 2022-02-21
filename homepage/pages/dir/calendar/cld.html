@@ -1,0 +1,53 @@
+<!DOCTYPE html> <!--- htmlコードであることを宣言 --->
+<html lang="ja"> <!--- 日本語（ja）を指定 --->
+ 
+ <head> <!--- ブラウザで必要となる情報の定義　例）CSSファイル、Jsファイル --->
+  <meta charset="UTF-8"> <!--- 文字コード（UTF-8）を指定 --->
+
+  <title>カレンダー</title>
+
+  <!--- cssファイルをstylesheetとして読み込み --->
+  <link href="../../../include/style.css" rel="stylesheet">
+  <link href="./cld.css" rel="stylesheet">
+ </head>
+ 
+ 
+ <body> <!--- 実際にユーザーが目にする内容 --->
+
+  <!--- ↓↓↓ヘッダー↓↓↓ --->
+  <div id="header" title="../../../">カレンダー</div>
+  <!--- ↑↑↑ヘッダー↑↑↑ --->
+  
+  <div id="main">
+   <div class="wrapper">
+    <!--- xxxx年xx月を表示 --->
+    <h1 id="cld-header"></h1>
+
+    <!--- ボタンクリックで月移動 --->
+    <div id="next-prev-button">
+     <button id="prev" onclick="prev()"><</button>
+     <button id="next" onclick="next()">></button>
+    </div>
+
+    <!--- カレンダー --->
+    <div id="calendar"></div>
+
+   </div>
+   
+   
+  </div>
+  
+  
+  <!--- ↓↓↓フッター↓↓↓ --->
+  <div id="footer"></div>
+  <!--- ↑↑↑フッター↑↑↑ --->
+  
+  <!-- Jsファイルを読み込み（ここでないと何故か反映されなかった） -->
+  <script type="text/javascript" src="./cld.js"></script>
+  <script type="text/javascript" src="../../../include/tmp.js"></script>
+
+ </body>
+
+</html>
+
+

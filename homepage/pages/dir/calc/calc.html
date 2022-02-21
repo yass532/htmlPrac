@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!--- htmlコードであることを宣言 --->
+<html lang="ja"> <!--- 日本語（ja）を指定 --->
+ 
+ <head> <!--- ブラウザで必要となる情報の定義　例）CSSファイル、Jsファイル --->
+  <meta charset="UTF-8"> <!--- 文字コード（UTF-8）を指定 --->
+
+  <title>電卓</title>
+
+  <!--- cssファイルをstylesheetとして読み込み --->
+  <link href="../../../include/style.css" rel="stylesheet">
+  <link href="./calc.css" rel="stylesheet">
+ </head>
+ 
+ 
+ <body> <!--- 実際にユーザーが目にする内容 --->
+
+  <!--- ↓↓↓ヘッダー↓↓↓ --->
+  <div id="header" title="../../../">電卓</div>
+  <!--- ↑↑↑ヘッダー↑↑↑ --->
+
+
+  <div id="main">
+   <div class="container">
+
+    <!--- 計算結果の出力 --->
+    <div id="output_total" class="output">0</div>
+
+    <!--- 計算過程の出力 --->
+    <div id="output_sub" class="output active">0</div>
+
+    <!--- ボタンを配置 --->
+    <div class = "input">
+     <section class="row">
+      <div id="clear">C</div>
+      <div class="num_btn"></div>
+      <div class="num_btn" id="bs">BS</div>
+      <div class="num_btn cal" data-index-id = '/'>÷</div>
+     </section>
+     <section class="row">
+      <div class="num_btn one_nine" data-index-id = 9>9</div>
+      <div class="num_btn one_nine" data-index-id = 8>8</div>
+      <div class="num_btn one_nine" data-index-id = 7>7</div>
+      <div class="num_btn cal" data-index-id = '*'>×</div>
+     </section>
+     <section class="row">
+      <div class="num_btn one_nine" data-index-id = 6>6</div>
+      <div class="num_btn one_nine" data-index-id = 5>5</div>
+      <div class="num_btn one_nine" data-index-id = 4>4</div>
+      <div class="num_btn cal" data-index-id = '-'>－</div>
+     </section>
+     <section class="row">
+      <div class="num_btn one_nine" data-index-id = 3>3</div>
+      <div class="num_btn one_nine" data-index-id = 2>2</div>
+      <div class="num_btn one_nine" data-index-id = 1>1</div>
+      <div class="num_btn cal" data-index-id = '+'>＋</div>
+     </section>
+     <section class="row">
+      <div class="num_btn" data-index-id = 00>00</div>
+      <div class="num_btn" id="zero" data-index-id = 0>0</div>
+      <div class="num_btn" id="point" data-index-id = .>.</div>
+      <div id="equal_btn">=</div>
+     </section>
+    </div> <!--- input --->
+   </div> <!--- container --->
+
+   <script src="./calc.js"></script>
+
+  </div> <!--- main --->
+
+
+  <!--- ↓↓↓フッター↓↓↓ --->
+  <div id="footer"></div>
+  <!--- ↑↑↑フッター↑↑↑ --->
+  
+  <!-- Jsファイルを読み込み（ここでないと何故か反映されなかった） -->
+  <script type="text/javascript" src="../../../include/tmp.js"></script>
+
+ </body>
+
+</html>
+
+
