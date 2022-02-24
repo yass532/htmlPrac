@@ -5,30 +5,39 @@
   <meta charset="UTF-8"> <!-- 文字コード（UTF-8）を指定 -->
 
   <!-- cssファイルをstylesheetとして読み込み -->
-  <link href="./include/style.css" rel="stylesheet">
+  <link href="./include/top.css" rel="stylesheet">
 
-  <title>目次</title>
+  <title>トップ</title>
  </head>
  
  
  <body> <!--- 実際にユーザーが目にする内容 --->
 
   <!--- ヘッダー --->
-  <div id="header" title="./">トップページ</div>
-
-
-  <div id="main">
-   <h1>ようこそ</h1>
-   
-  </div> <!--- main --->
-
+  <div id='head-main'>
+   <header>
+    <h1 id='header-title'><a href='./index.html'>トップページ</a></h1>
+    <nav id="top-nav">
+     <ul id="header-menu">
+      <li><a href="./pages/about/about.html">ABOUT</a></li>
+      <li><a href="./pages/menu/menu.html">MENU</a></li>
+      <li><a href="./pages/contact/contact.html">CONTACT</a></li>
+     </ul>
+    </nav>
+   </header>
+ 
+ 
+   <div id="main">
+    <h1>ようこそ</h1>
+    
+   </div> <!--- main --->
+  </div>
 
   <!--- フッター --->
-  <div id="footer"></div>
+  <footer>
+   <p>◎ All rights reserved by yasu.</p>
+  </footer>
   
-  
-  <!-- Jsファイルを読み込み（ここでないと何故か反映されなかった） -->
-  <script type="text/javascript" src="./include/tmp.js"></script>
   
  </body>
 
