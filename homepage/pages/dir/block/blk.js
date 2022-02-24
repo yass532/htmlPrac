@@ -61,11 +61,14 @@ let block_height = 20;
 let left_pressed = false;
 let right_pressed = false;
 
+// スペースキーの認識
+let space_pressed = false;
+
 document.addEventListener("keydown", keyDown, false);
 document.addEventListener("keyup", keyUp, false);
 
 
-
+// キーが押された
 function keyDown(e){
  if(e.code == "ArrowRight"){
   right_pressed = true;
@@ -73,9 +76,13 @@ function keyDown(e){
  if(e.code == "ArrowLeft"){
   left_pressed = true;
  }
+ if(e.code == "Space"){
+  space_pressed = true;
+  console.log("space");
+ }
 }
 
-
+// キーが離れた
 function keyUp(e){
  if(e.code == "ArrowRight"){
   right_pressed = false;
@@ -83,16 +90,20 @@ function keyUp(e){
  if(e.code == "ArrowLeft"){
   left_pressed = false;
  }
+ if(e.code == "Space"){
+  space_pressed = false;
+ }
 }
 
 
+// 本処理
 setInterval(function(){
  eraseCanvas(); // キャンバスを消す
  drawBar(); // バーを描画
  drawBall(); // ボールを描画
  drawBlock();
-}, 30);
-
+}, 10);
+ 
 
 function eraseCanvas(){
  c.clearRect(0, 0, canvas_width, canvas_height);

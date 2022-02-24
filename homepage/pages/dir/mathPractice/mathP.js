@@ -1,13 +1,27 @@
+/* グローバル変数 */
 
-/* 数字ボタンを格納 */
-const numBtn = document.querySelectorAll(".numBtn");
+let scene = 0;
+/* 各シーンについて、
+// 0: タイトル
+// 1: 何か
+// 2: ゲーム画面（＋カウントダウン）
+// 3: ゲームオーバー
+// 4: ランキング
+*/
 
-var answer = document.getElementById("answer");
+/* 初期設定 */
 
-/* 数字ボタンを押したときの処理 */
-numBtn.forEach(index => {
- index.addEventListener("click", () => {
-  answer.innerHTML = index.dataset.indexId;
-  /*console.log(index.dataset.indexId);*/
- })
+$(function() {
+ 
+ if(scene == 0){
+  $("#qBox").click(function() {
+   $("#quizScene").hide();
+  });
+ }
+ if(scene == 1){
+  $(".numBtn").click(function() {
+   $(this).css("background-color", "green");
+  });
+ }
+ 
 })

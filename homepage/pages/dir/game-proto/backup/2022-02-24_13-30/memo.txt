@@ -1,0 +1,7 @@
+できること
+
+・gameObjectsを使用してplayer、fps、gameInputを表示可能
+・FPSを設定
+・FPSの表示
+・キーボード入力の認識
+・入力されたキーの表示

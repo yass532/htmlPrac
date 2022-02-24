@@ -1,4 +1,4 @@
-#quizScene {
+.wrapper {
  width: 600px;
  max-width: 600px; /* 最大横幅指定 */
  margin: 0 auto; /* 各ボックスを中央揃え */
